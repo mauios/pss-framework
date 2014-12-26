@@ -1,5 +1,5 @@
-module Hawaii.Shell.Controls.Styles
-plugin declarative_hawaiistyles
+module PSS.Shell.Controls.Styles
+plugin declarative_pssstyles
 Style 1.0 Style.qml
 StyledItem 1.0 StyledItem.qml
 DialogStyle 1.0 Base/DialogStyle.qml

@@ -5,8 +5,8 @@ set(SOURCES
     standardpaths.cpp
 )
 
-add_library(declarative_hawaiicore SHARED ${SOURCES})
-target_link_libraries(declarative_hawaiicore
+add_library(declarative_psscore SHARED ${SOURCES})
+target_link_libraries(declarative_psscore
     Qt5::Qml
 )
 
@@ -14,7 +14,7 @@ set(FILES
     qmldir
 )
 
-install(TARGETS declarative_hawaiicore LIBRARY
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Core)
+install(TARGETS declarative_psscore LIBRARY
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Core)
 install(FILES ${FILES}
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Core)
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Core)

@@ -1,7 +1,7 @@
-Hawaii Framework
+PSS Framework
 ================
 
-Components for Hawaii applications.
+Components for PSS applications.
 
 ## Dependencies
 
@@ -30,23 +30,23 @@ and run cmake:
 ```sh
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=/opt/hawaii ..
+cmake -DCMAKE_INSTALL_PREFIX=/opt/pss ..
 ```
 
 To do a debug build the last command can be:
 
 ```sh
-cmake -DCMAKE_INSTALL_PREFIX=/opt/hawaii -DCMAKE_BUILD_TYPE=Debug ..
+cmake -DCMAKE_INSTALL_PREFIX=/opt/pss -DCMAKE_BUILD_TYPE=Debug ..
 ```
 
 To do a release build instead it can be:
 
 ```sh
-cmake -DCMAKE_INSTALL_PREFIX=/opt/hawaii -DCMAKE_BUILD_TYPE=Release ..
+cmake -DCMAKE_INSTALL_PREFIX=/opt/pss -DCMAKE_BUILD_TYPE=Release ..
 ```
 
 If not passed, the `CMAKE_INSTALL_PREFIX` parameter defaults to /usr/local.
-You have to specify a path that fits your needs, /opt/hawaii is just an example.
+You have to specify a path that fits your needs, /opt/pss is just an example.
 
 Package maintainers would pass `-DCMAKE_INSTALL_PREFIX=/usr`.
 

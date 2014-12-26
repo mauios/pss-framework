@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2013-2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -29,7 +29,7 @@
 
 #include "stylesettings.h"
 
-class HawaiiShellStylesPlugin : public QQmlExtensionPlugin
+class PSSShellStylesPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface/1.0")
@@ -39,14 +39,14 @@ public:
     static QObject *styleSettingsProvider(QQmlEngine *engine, QJSEngine *jsEngine);
 };
 
-void HawaiiShellStylesPlugin::registerTypes(const char *uri)
+void PSSShellStylesPlugin::registerTypes(const char *uri)
 {
-    // @uri Hawaii.Shell.Controls.Styles
+    // @uri PSS.Shell.Controls.Styles
     qmlRegisterSingletonType<StyleSettings>(uri, 1, 0, "StyleSettings",
-                                            HawaiiShellStylesPlugin::styleSettingsProvider);
+                                            PSSShellStylesPlugin::styleSettingsProvider);
 }
 
-QObject *HawaiiShellStylesPlugin::styleSettingsProvider(QQmlEngine *engine, QJSEngine *jsEngine)
+QObject *PSSShellStylesPlugin::styleSettingsProvider(QQmlEngine *engine, QJSEngine *jsEngine)
 {
     Q_UNUSED(engine);
     Q_UNUSED(jsEngine);

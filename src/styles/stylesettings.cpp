@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2012-2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -46,14 +46,14 @@ QString StyleSettings::path() const
     QString style = name();
 
     // Try standard path first
-    QString path = QString("%1/Hawaii/Shell/Controls/Styles/%2").arg(QML_INSTALL_DIR).arg(style);
+    QString path = QString("%1/PSS/Shell/Controls/Styles/%2").arg(QML_INSTALL_DIR).arg(style);
     if (QDir(path).exists())
         return path;
 
     // Return style only if it exists
     QStringList paths =
             QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                                      QStringLiteral("hawaii/styles/") + style,
+                                      QStringLiteral("pss/styles/") + style,
                                       QStandardPaths::LocateDirectory);
     for (const QString &path: paths) {
         QDir dir(path);
@@ -62,7 +62,7 @@ QString StyleSettings::path() const
     }
 
     // Fall back to Base style
-    return QString("file://%1/Hawaii/Shell/Controls/Styles/Base").arg(QML_INSTALL_DIR);
+    return QString("file://%1/PSS/Shell/Controls/Styles/Base").arg(QML_INSTALL_DIR);
 }
 
 #include "moc_stylesettings.cpp"

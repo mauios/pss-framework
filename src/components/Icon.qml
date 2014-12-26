@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2013-2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -28,7 +28,7 @@ import QtQuick 2.0
 
 /*!
     \qmltype Icon
-    \inqmlmodule Hawaii.Components 1.0
+    \inqmlmodule PSS.Components 1.0
     \brief Displays an icon from the icon theme or another (local or remote) location.
 
     An icon from the icon theme can be specified with the \c iconName property

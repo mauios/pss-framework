@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -25,8 +25,8 @@
  ***************************************************************************/
 
 import QtQuick 2.1
-import Hawaii.Shell.Controls 1.0
-import Hawaii.Shell.Controls.Styles 1.0 as Styles
+import PSS.Shell.Controls 1.0
+import PSS.Shell.Controls.Styles 1.0 as Styles
 import org.kde.plasma.core 2.0 as PlasmaCore
 
 Styles.Style {

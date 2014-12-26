@@ -1,2 +1,2 @@
-module Hawaii.Core
-plugin declarative_hawaiicore
+module PSS.Core
+plugin declarative_psscore

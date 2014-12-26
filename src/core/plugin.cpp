@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -38,7 +38,7 @@ static QObject *standardpathsProvider(QQmlEngine *engine, QJSEngine *jsEngine)
     return paths;
 }
 
-class HawaiiCorePlugin : public QQmlExtensionPlugin
+class PSSCorePlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
@@ -46,11 +46,11 @@ public:
     void registerTypes(const char *uri);
 };
 
-void HawaiiCorePlugin::registerTypes(const char *uri)
+void PSSCorePlugin::registerTypes(const char *uri)
 {
-    Q_ASSERT(QByteArray("Hawaii.Core") == QByteArray(uri));
+    Q_ASSERT(QByteArray("PSS.Core") == QByteArray(uri));
 
-    // @uri Hawaii.Core
+    // @uri PSS.Core
     qmlRegisterSingletonType<StandardPaths>(uri, 1, 0, "StandardPaths",
                                             standardpathsProvider);
 }

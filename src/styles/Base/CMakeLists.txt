@@ -8,4 +8,4 @@ set(MODULE_FILES
     TooltipStyle.qml
 )
 install(FILES ${MODULE_FILES}
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Shell/Controls/Styles/Base)
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Shell/Controls/Styles/Base)

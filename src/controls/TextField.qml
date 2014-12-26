@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -26,12 +26,12 @@
 
 import QtQuick 2.1
 import QtQuick.Controls 1.2 as QtControls
-import Hawaii.Components 1.0 as Components
-import Hawaii.Shell.Controls.Styles 1.0 as Styles
+import PSS.Components 1.0 as Components
+import PSS.Shell.Controls.Styles 1.0 as Styles
 import org.kde.plasma.core 2.0 as PlasmaCore
 
 /**
- * A text field control with Hawaii style.
+ * A text field control with PSS style.
  * @inherit QtQuick.Controls.TextField
  */
 QtControls.TextField {

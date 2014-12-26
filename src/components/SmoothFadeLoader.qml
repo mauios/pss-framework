@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -28,7 +28,7 @@ import QtQuick 2.0
 
 /*!
     \qmltype SmoothFadeLoader
-    \inqmlmodule Hawaii.Components 1.0
+    \inqmlmodule PSS.Components 1.0
     \brief Displays an item and smoothly fade when the source is changed.
 
     This component loads an item with a Loader and smoothly fade to another item when
@@ -40,7 +40,7 @@ import QtQuick 2.0
     Example of usage:
     \code
     import QtQuick 2.0
-    import Hawaii.Components 1.0
+    import PSS.Components 1.0
 
     Item {
         width: 640

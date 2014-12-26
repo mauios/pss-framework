@@ -9,13 +9,13 @@ set(SOURCES
     stylesettings.cpp
 )
 
-add_library(declarative_hawaiistyles SHARED ${SOURCES})
-target_link_libraries(declarative_hawaiistyles
+add_library(declarative_pssstyles SHARED ${SOURCES})
+target_link_libraries(declarative_pssstyles
     Qt5::Qml
 )
 
-install(TARGETS declarative_hawaiistyles LIBRARY
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Shell/Controls/Styles)
+install(TARGETS declarative_pssstyles LIBRARY
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Shell/Controls/Styles)
 
 set(MODULE_FILES
     qmldir
@@ -23,6 +23,6 @@ set(MODULE_FILES
     StyledItem.qml
 )
 install(FILES ${MODULE_FILES}
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Shell/Controls/Styles)
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Shell/Controls/Styles)
 
 add_subdirectory(Base)

@@ -4,4 +4,4 @@ set(FILES
 )
 
 install(FILES ${FILES}
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Effects)
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Effects)

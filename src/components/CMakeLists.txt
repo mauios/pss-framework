@@ -7,7 +7,7 @@ set(FILES
 )
 
 install(FILES ${FILES}
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Components)
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Components)
 
 set(LISTITEMS_FILES
     ListItems/Base.qml
@@ -18,4 +18,4 @@ set(LISTITEMS_FILES
 )
 
 install(FILES ${LISTITEMS_FILES}
-        DESTINATION ${QML_INSTALL_DIR}/Hawaii/Components/ListItems)
+        DESTINATION ${QML_INSTALL_DIR}/PSS/Components/ListItems)

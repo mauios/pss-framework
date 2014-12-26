@@ -1,5 +1,5 @@
 /****************************************************************************
- * This file is part of Hawaii Framework.
+ * This file is part of PSS Framework.
  *
  * Copyright (C) 2013-2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
  *
@@ -25,7 +25,7 @@
  ***************************************************************************/
 
 import QtQuick 2.0
-import Hawaii.Shell.Controls.Styles 1.0 as Styles
+import PSS.Shell.Controls.Styles 1.0 as Styles
 
 Styles.Style {
     property color panelColor1: Qt.rgba(0.13, 0.13, 0.13, 0.7)
